@@ -6,8 +6,8 @@ var ReactDOM = require("react-dom");
 
 */
 const fname = "Nicki";
-
 const lname = "Wong";
+const currentYear = new Date().getFullYear();
 
 const num = 7;
 
@@ -17,7 +17,7 @@ ReactDOM.render(
       Hello {fname} {lname}!
     </h1>
     <h1>Hello {fname + " " + lname}!</h1>
-    <h1>Hello {`${fname}  ${lname}`} !</h1>
+    <h1>Hello {`${fname}  ${lname}`}!</h1>
     <p>
       {" "}
       test {num}
@@ -30,6 +30,10 @@ ReactDOM.render(
       <li>Noodles</li>
       <li>Jamon</li>
     </ul>
+    <p>
+      Created by {fname} {lname}
+    </p>
+    <p>Copyright {currentYear}</p>
   </div>,
   document.getElementById("root")
 );
