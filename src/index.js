@@ -1,10 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
 /* same as the code above
 var React = require("react");
 var ReactDOM = require("react-dom");
 
 */
+import React from "react";
+import ReactDOM from "react-dom";
+
 const fname = "Nicki";
 const lname = "Wong";
 const num = 12345678;
@@ -23,9 +24,7 @@ ReactDOM.render(
       {Math.floor(Math.random() * 10)}
     </p>
     <img src={imgName} alt="picsum" />
-    <h1 className="heading" contentEditable="true" spellCheck="false">
-      My Favourit Foods
-    </h1>
+    <h1 className="heading">My Favourite Foods</h1>
     <ul>
       <li>Bacon</li>
       <li>Jamon</li>
