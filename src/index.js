@@ -1,8 +1,11 @@
 /* same as the code above
+If you use ES6 with npm, you can write import ReactDOM from 'react-dom'. 
+If you use ES5 with npm, you can write var ReactDOM = require('react-dom').
+
 var React = require("react");
 var ReactDOM = require("react-dom");
-
 */
+
 import React from "react";
 import ReactDOM from "react-dom";
 
