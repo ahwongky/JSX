@@ -15,25 +15,38 @@ const num = 12345678;
 const currentYear = new Date().getFullYear();
 const imgName = "https://picsum.photos/200";
 
+const customStyle = {
+  color: "red",
+  fontSize: "20px",
+  border: "1px solid black"
+};
+customStyle.color = "blue";
+
 ReactDOM.render(
   <div>
+    {/* 3 ways to update the fields */}
     <h1>
       Hello {fname} {lname}!
     </h1>
     <h1>Hello {fname + " " + lname}!</h1>
     <h1>Hello {`${fname}  ${lname}`}!</h1>
+
+    {/* expression can be used directly*/}
     <p>
       test {num}
       {Math.floor(Math.random() * 10)}
     </p>
     <img src={imgName} alt="picsum" />
+
+    {/* Can linked CSS file by className*/}
     <h1 className="heading">My Favourite Foods</h1>
     <ul>
       <li>Bacon</li>
       <li>Jamon</li>
       <li>Noodles</li>
     </ul>
-    <div>
+
+    {/*     <div>
       <img
         className="food-img"
         alt="Bacon"
@@ -49,7 +62,14 @@ ReactDOM.render(
         alt="Jamon"
         src="https://hot-thai-kitchen.com/wp-content/uploads/2021/11/chili-garlic-noodles-blog.jpg"
       ></img>
-    </div>
+    </div>*/}
+
+    {/* Can set style in the same code directly*/}
+    <h1 style={{ color: "red" }}>Hello World! </h1>
+
+    {/* Can linked style in the same page above*/}
+    <h1 style={customStyle}>Hello World! </h1>
+
     <p>
       Created by {fname} {lname}
     </p>
